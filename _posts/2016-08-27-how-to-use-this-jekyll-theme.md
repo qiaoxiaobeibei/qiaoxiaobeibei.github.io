@@ -1,4 +1,13 @@
-# LessOrMore
+---
+layout: post
+title:  如何使用LessOrMore这个Jekyll模版
+date:   2016-08-27 01:08:00 +0800
+categories: document
+tag: 教程
+---
+
+* content
+{:toc}
 
 
 致谢
@@ -17,9 +26,9 @@
 
 使用git从[LessOrMore](https://github.com/luoyan35714/LessOrMore.git)主页下载项目
 
-``` bash
+{% highlight bash %}
 git clone https://github.com/luoyan35714/LessOrMore.git
-```
+{% endhighlight %}
 
 配置
 ------------------------------------
@@ -28,7 +37,7 @@ git clone https://github.com/luoyan35714/LessOrMore.git
 
 > 特别注意`baseurl`的配置。如果是`***.github.io`项目，不修改为空''的话，会导致JS,CSS等静态资源无法找到的错误
 
-``` bash
+{% highlight bash %}
 name: 博客名称
 email: 邮箱地址
 author: 作者名
@@ -45,14 +54,14 @@ FB:
         short_name : 多说账户
     disqus :
         short_name : Disqus账户
-```
+{% endhighlight %}
 
 如何写文章
 ------------------------------------
 
 在`LessOrMore/_posts`目录下新建一个文件，可以创建文件夹并在文件夹中添加文件，方便维护。在新建文件中粘贴如下信息，并修改以下的`titile`,`date`,`categories`,`tag`的相关信息，添加`* content {:toc}`为目录相关信息，在进行正文书写前需要在目录和正文之间输入至少2行空行。然后按照正常的Markdown语法书写正文。
 
-``` bash
+{% highlight bash %}
 ---
 layout: post
 #标题配置
@@ -70,21 +79,30 @@ tag: 教程
 
 
 我是正文。我是正文。我是正文。我是正文。我是正文。我是正文。
-```
+{% endhighlight %}
 
 执行
 ------------------------------------
 
-``` bash
+{% highlight bash %}
 jekyll server
-```
+{% endhighlight %}
 
 效果
 ------------------------------------
 打开浏览器并输入URL`http://localhost:4000/`,回车。
 
 
-以下为此主题作者作者相关信息：
+为什么重复造轮子
+====================================
+
+很明显，我在重复造轮子。在13年接触到GIT，14年末接触到Jekyll，然后搭建了自己的博客，当时是选用了[JekyllThemes](http://jekyllthemes.org/)上的[Solar](https://github.com/mattvh/solar-theme-jekyll)主题，一直到现在。不过中间一直感觉页面风格还是偏暗，阅读不方便。并且有一些小的细节做的不是很好。在页面的跨平台浏览上有一些瑕疵。并且不区分一级标题和二级标题，导致没有重点强调。诸如此类，用了2年，用的越多，越发吃力，中间就一直在寻找新的能够让我一眼认定的主题。
+
+虽然设计好看的主题很多。但是真正适合拿来做博客的却不多。中间一直没有找到合适的主题。直到有一天看到Less官网的主题之后，豁然觉得这就是我的博客想要的样子。简单而又不平凡。所以就决定了要把博客迁移到这个主题，然后拿了两天晚上来把这个主题做出来。
+
+重复造了轮子，但是这个是迄今为止自己觉得最适合我的博客的轮子，所以是值得的！
+
+关于作者
 ====================================
 
 热爱开源，热爱折腾的Java程序猿。更多个人信息和联系方式可以参照[我的简介](http://www.hifreud.com/Resume.io/)。
@@ -99,8 +117,8 @@ jekyll server
 支付宝
 ----------------
 
-<img src="/styles/images/zhifubao.PNG" alt="支付宝二维码付款给Freud" width="310" />
+<img src="{{ '/styles/images/zhifubao.PNG' | prepend: site.baseurl }}" alt="支付宝二维码付款给Freud" width="310" />
 
 微信
 ----------------
-![微信二维码付款给Freud](/styles/images/weixin.png)
+![微信二维码付款给Freud]({{ '/styles/images/weixin.png' | prepend: site.baseurl }})

@@ -1,0 +1,28 @@
+# Site settings
+name: 乔北的博客
+email: zdzhengdan@yeah.net
+author: QiaoBei
+url: https://qiaoxiaobeibei.github.io/
+resume_site: "" # 个人简历地址
+github: https://github.com/qiaoxiaobeibei
+baseurl: "" # 项目名，这里是个人站点，所以设置为空
+description: 山有木 木有枝
+meta_description: 世界这么大，不去看看怎么知道喜不喜欢。
+motto: 不迁怒，不贰过。
+banner: 学而不思则罔，思而不学则殆。
+
+#permalink: /:categories/:year/:month/:day/:title/
+permalink: /:year/:month/:day/:title/
+paginate: 10
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+
+github_username: qiaoxiaobeibei
+highlighter: Pygments
+
+# Build settings
+markdown: kramdown
+
+baidu_analysis: 94be4b0f9fc5d94cc0d0415ea6761ae9
+
+# busuanzi_value_site_pv
