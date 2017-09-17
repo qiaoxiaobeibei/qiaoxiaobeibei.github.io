@@ -10,6 +10,7 @@ tag: interview
 {:toc}
 
 
+本篇作者：博客主题LessOrMore原作者hifreud
 本文翻译自[Linked In](https://www.linkedin.com/)，作者Minal Mehta
 
 原文地址 [I’ve Interviewed 100s of Candidates and the Ones I Hire Always Do This](http://www.linkedin.com/pulse/20141002164029-1473578-how-to-win-an-interview-before-it-starts?midToken=AQH6jyhMOpWb0g&trk=eml-b2_content_ecosystem_digest-recommended_articles-74-null&fromEmail=fromEmail&ut=3Sa86TzhqLj6s1)

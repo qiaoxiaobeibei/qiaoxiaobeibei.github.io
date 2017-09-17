@@ -10,6 +10,7 @@ tag: 教程
 {:toc}
 
 
+本篇作者：博客主题LessOrMore原作者hifreud
 挥别
 ====================================
 
@@ -66,3 +67,7 @@ Disqus被墙，而我又极少翻墙。所以也不再考虑之列，最后也�
 修改`_includes/LessOrMore/comments-providers/yungentie`文件中的内容，将文件中的代码全部删除，并粘贴刚刚从云跟帖网站复制的代码。
 
 ![/styles/images/yungentie/01.png]({{ '/styles/images/yungentie/05.png' | prepend: site.baseurl  }})
+
+
+======================================
+QiaoBei新加：so，本站还没有评论系统，需要留言的各位可以直接去相应的[https://github.com/qiaoxiaobeibei/qiaoxiaobeibei.github.io](github)下提交issues呦。
